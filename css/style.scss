@@ -1,0 +1,473 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    // box-sizingの初期値はcontent-box
+    // box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+// font setting
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// h2 
+.section_title {
+    margin: 0 auto;
+    width: 860px;
+
+    .section_title_sbs {
+        // text-align: center;
+        display: flex;
+        height: 20px;
+        width: 860px;
+        margin: 0 auto 20px;
+        // padding-bottom: 20px;
+
+        .sidebar_left,
+        .sidebar_right {
+            border-bottom: 1px solid #000;
+            width: 240px;
+            padding-top: -10px;
+        }
+
+        .section_title_h2 {
+            padding: 0 77px 0;
+            font-size: 28px;
+        }
+    }
+}
+
+.section_sub {
+    margin-top: 84px;
+
+    p {
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+// h2 end
+
+// h6
+h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1;
+
+    text-align: center;
+}
+
+p {
+    // font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
+    // font-weight: 500;
+}
+
+// font setting end
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    // display: flex;
+    // justify-content: space-between;
+
+    li {
+        list-style: none;
+        // list-style-position: inside;
+    }
+}
+
+
+.header {
+    // background-color: #aaa;
+    position: fixed;
+
+    width: 300px;
+    height: 860px;
+
+    .header_space {
+        padding: 40px 0 0 45px;
+    }
+
+    .header_logo {
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .header_menu,
+    .header_sns {
+
+        // padding-top: 42px;
+        .header_menu_ol,
+        .header_sns_ol {
+            li {
+                font-size: 14px;
+                letter-spacing: 0.2px;
+                line-height: 1;
+
+                margin-top: 22px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+        }
+    }
+
+    .header_menu {
+        padding-top: 42px;
+    }
+
+    .header_sns {
+        padding-top: 82px;
+
+        .header_sns_ol {
+            li {
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+}
+
+.contents_space {
+    margin-left: 300px;
+}
+
+.background_hero_video {
+    overflow: hidden;
+
+    // position: relative;
+    .hero_img {
+        height: auto;
+        width: 91vw;
+        // margin: 0;
+        position: relative;
+
+        .source {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+        }
+    }
+}
+
+.portfolio {
+    margin-top: 157px;
+    padding-bottom: 62px;
+
+    .portfolio_card_s {
+        width: 860px;
+        height: 565px;
+        margin: 79px auto 0;
+        // padding: 58px 0 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        .portfolio_card {
+            position: relative;
+            border: 1px solid #fff;
+
+            .portfolio_txt {
+                position: absolute;
+                bottom: 0;
+                /* 画像の上部に配置 */
+                left: 0;
+                // display: flex;
+                // justify-content: center;
+                /* 横方向に中央揃え */
+                // align-items: center;
+                /* 縦方向に中央揃え */
+                // background-color: rgba(0, 0, 0, 0.5);
+                /* 透明な背景で文字を読みやすく */
+                // color: white;
+                /* テキストの色を白に */
+                // font-size: 18px;
+                /* テキストのサイズを調整 */
+                // text-align: center;
+                // pointer-events: none;
+
+                p {
+                    padding: 7px;
+                    font-size: 10px;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+
+.house_process {
+    background-color: #ddd;
+    width: 100%;
+    height: 100%;
+    // color: #fff;
+    padding-top: 100px;
+    padding-bottom: 162px;
+
+    .section_title {
+        .section_title_sbs .section_title_h2 {
+            padding: 0 56px 0;
+        }
+    }
+
+    .house_process_circle_and_txt_s {
+        display: flex;
+        justify-content: space-between;
+        width: 860px;
+        margin: 0 auto;
+        padding-top: 59px;
+
+        .house_process_circle_and_txt {
+            text-align: center;
+
+            .house_process_circle {
+                height: 258px;
+                width: 258px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                text-align: center;
+
+                p {
+                    padding-top: 123px;
+                    // font-size: 14px;
+                }
+            }
+
+            h6 {
+                padding-top: 20px;
+            }
+
+            p {
+                padding-top: 11px;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+
+// house_process end
+
+
+.house_make {
+    width: 860px;
+    margin: 0 auto;
+
+    .section_title {
+        margin-top: 122px;
+
+        .section_title_sbs {
+            .section_title_h2 {
+                padding: 0 50px 0;
+            }
+        }
+    }
+
+    .section_sub {
+        margin-top: 84px;
+
+        p {
+            padding: 0;
+            font-size: 15px;
+        }
+    }
+
+    .house_make_sbs {
+        display: flex;
+
+        padding-top: 61px;
+
+        .house_figure_s {
+            width: 200px;
+
+            .house_figure {
+                width: 200px;
+                height: 110px;
+                background-color: #333;
+                text-align: center;
+                padding-top: 35px;
+                // margin-top: 30px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                p {
+                    padding: 0;
+                    color: #fff;
+                }
+            }
+
+            .yellow_line {
+                height: 30px;
+                width: 50px;
+                background-color: #FFDD04;
+                margin: 0 auto;
+            }
+        }
+
+        .house_make_txt {
+            margin-left: 41px;
+            margin-top: 3px;
+
+            .house_make_p_s {
+                padding-top: 44px;
+
+                &:first-child {
+                    padding: 0;
+                }
+
+                .house_make_p_s_sbs {
+                    display: flex;
+
+                    span {
+                        text-align: center;
+                        padding-top: 7px;
+                        display: block;
+                        background-color: #333;
+                        color: #fff;
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                    }
+
+                    .house_make_p_title {
+                        width: 584px;
+                        padding-left: 10px;
+
+                        h5 {
+                            display: block;
+                            font-size: 20px;
+                            font-weight: 600;
+                            padding: 0;
+                        }
+
+                        .title_border {
+                            width: 100%;
+                            border-bottom: 1px solid #333;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+
+                p {
+                    padding: 12px 0 0;
+                    font-size: 15px;
+                    letter-spacing: 1.1px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+// house make end
+
+.contact {
+    width: 860px;
+    margin: 0 auto;
+
+    .section_title {
+        margin-top: 135px;
+
+        .section_title_sbs {
+            .section_title_h2 {
+                padding: 0 106px 0;
+            }
+        }
+    }
+
+    .contact_figure_sbs {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 63px;
+
+        .contact_link {
+            width: 258px;
+            height: 191px;
+            border: 1px solid #333;
+            text-align: center;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+
+            p {
+                padding-top: 9px;
+            }
+        }
+    }
+}
+
+// contact end
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    height: 168px;
+    width: 100%;
+
+    margin-top: 160px;
+
+    .footer_ol {
+        display: flex;
+        justify-content: space-between;
+        // text-align: center;
+        width: 620px;
+        padding-top: 50px;
+        margin: 0 auto;
+        
+        .footer_li {
+            height: 20px;
+            border-right: 1px solid #fff;
+            color: #fff;
+            padding: 0 10px;
+
+            &:last-child {
+                border-right: initial;
+                padding: 0;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .footer_copyright {
+        padding-top: 64px;
+        text-align: center;
+        p {
+            color: #fff;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+}
